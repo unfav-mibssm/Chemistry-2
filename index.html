@@ -5,74 +5,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plus Two Chemistry</title>
     <style>
-        @font-face {
-            font-family: 'CustomButtonFont';
-            src: url('Font.ttf');
-        }
+        /* --- FONT REGISTRATION --- */
+        @font-face { font-family: 'PlusTwoFont'; src: url('Plustwo.ttf'); }
+        @font-face { font-family: 'SubjectFont'; src: url('Subject.ttf'); }
+        @font-face { font-family: 'CaptionFont'; src: url('Caption.ttf'); }
+        @font-face { font-family: 'ChapterNoFont'; src: url('Chapterno.ttf'); }
+        @font-face { font-family: 'ChapterNameFont'; src: url('Chapter.ttf'); }
+        @font-face { font-family: 'ButtonFont'; src: url('Font.ttf'); }
 
+        /* --- GLOBAL STYLES --- */
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             background-color: #ffffff;
             color: #2c2c2c;
             margin: 0 auto;
             padding: 40px 25px;
             max-width: 600px;
             -webkit-font-smoothing: antialiased;
+            text-align: left;
         }
 
+        /* --- HEADER SECTION --- */
         .plus-two {
+            font-family: 'PlusTwoFont', sans-serif;
             color: #7E7E62;
-            font-weight: 600;
             font-size: 1.25rem;
-            margin-bottom: 45px;
-            letter-spacing: 0.5px;
+            margin-bottom: 30px; /* Reduced gap */
         }
 
         h1 {
+            font-family: 'SubjectFont', sans-serif;
             font-size: 3.5rem;
-            font-weight: 800;
             margin: 0;
             line-height: 1.1;
             color: #222;
         }
 
         .tagline {
+            font-family: 'CaptionFont', sans-serif;
             font-size: 1.15rem;
-            margin: 25px 0 0 0; /* Removed bottom margin */
+            margin: 15px 0 0 0;
             color: #333;
         }
 
         .emoji {
             font-size: 1.3rem;
-            margin-bottom: 0; /* Removed gap below emoji */
+            margin-bottom: 0;
             display: block;
         }
 
-        /* Centered divider with new color and no vertical gaps */
+        /* --- CENTERED DIVIDER --- */
         .wp-divider {
             border: 0;
             height: 2px;
             background-color: #92593B; 
             width: 85px;
-            margin: 20px auto; /* Centered and reduced vertical gap */
+            margin: 20px auto; 
         }
 
+        /* --- CHAPTER LABELS --- */
         .chapter-label {
+            font-family: 'ChapterNoFont', sans-serif;
             font-size: 1rem;
-            margin-bottom: 15px; /* Reduced gap before buttons */
+            margin-bottom: 10px;
             display: block;
             color: #333;
         }
 
         .chapter-label strong {
-            font-weight: 800;
+            font-family: 'ChapterNameFont', sans-serif;
+            font-weight: normal; /* Using the custom font's own weight */
         }
 
+        /* --- BUTTONS --- */
         .btn-container {
             display: flex;
             flex-direction: column;
             gap: 12px;
-            margin-bottom: 0; /* Removed gap after buttons to sit close to border */
+            margin-bottom: 0;
         }
 
         .btn {
@@ -81,7 +90,7 @@
             text-decoration: none;
             padding: 12px 28px;
             border-radius: 4px;
-            font-family: 'CustomButtonFont', sans-serif;
+            font-family: 'ButtonFont', sans-serif;
             font-size: 1.1rem;
             width: fit-content;
             display: inline-block;
@@ -96,14 +105,16 @@
             font-size: 1.2rem;
             margin-top: 20px;
             padding-bottom: 40px;
+            text-align: center;
         }
     </style>
 </head>
 <body>
 
-    <div class="plus-two">Plus Two</div>
+    <div class="plus-two">PLUS TWO</div>
     <h1>Chemistry</h1>
-    <p class="tagline">Forget love, chemistry has better reactions.💔</p>
+    <p class="tagline">Forget love, chemistry has better reactions.</p>
+    <span class="emoji">💔</span>
 
     <hr class="wp-divider">
 
