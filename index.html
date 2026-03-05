@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plus Two Chemistry</title>
     <style>
-        /* Link your custom font */
         @font-face {
             font-family: 'CustomButtonFont';
             src: url('Font.ttf');
@@ -39,27 +38,28 @@
 
         .tagline {
             font-size: 1.15rem;
-            margin: 25px 0 5px 0;
+            margin: 25px 0 0 0; /* Removed bottom margin */
             color: #333;
         }
 
         .emoji {
             font-size: 1.3rem;
-            margin-bottom: 20px;
+            margin-bottom: 0; /* Removed gap below emoji */
             display: block;
         }
 
+        /* Centered divider with new color and no vertical gaps */
         .wp-divider {
             border: 0;
             height: 2px;
-            background-color: #AF967E; 
+            background-color: #92593B; 
             width: 85px;
-            margin: 45px auto 45px 0;
+            margin: 20px auto; /* Centered and reduced vertical gap */
         }
 
         .chapter-label {
             font-size: 1rem;
-            margin-bottom: 25px;
+            margin-bottom: 15px; /* Reduced gap before buttons */
             display: block;
             color: #333;
         }
@@ -71,25 +71,21 @@
         .btn-container {
             display: flex;
             flex-direction: column;
-            gap: 15px;
-            margin-bottom: 45px;
+            gap: 12px;
+            margin-bottom: 0; /* Removed gap after buttons to sit close to border */
         }
 
         .btn {
             background-color: #7E7E62;
             color: #ffffff;
             text-decoration: none;
-            padding: 14px 28px;
+            padding: 12px 28px;
             border-radius: 4px;
-            
-            /* Applying your custom font here */
             font-family: 'CustomButtonFont', sans-serif;
-            
             font-size: 1.1rem;
             width: fit-content;
             display: inline-block;
             text-align: center;
-            border: none;
         }
 
         .btn:hover {
@@ -98,7 +94,7 @@
 
         .footer {
             font-size: 1.2rem;
-            margin-top: 60px;
+            margin-top: 20px;
             padding-bottom: 40px;
         }
     </style>
@@ -107,8 +103,7 @@
 
     <div class="plus-two">Plus Two</div>
     <h1>Chemistry</h1>
-    <p class="tagline">Forget love, chemistry has better reactions.</p>
-    <span class="emoji">💔</span>
+    <p class="tagline">Forget love, chemistry has better reactions.💔</p>
 
     <hr class="wp-divider">
 
