@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plus Two Chemistry</title>
+    
+    <link rel="icon" type="image/png" href="favicon.png">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
     <style>
         /* --- FONT REGISTRATION --- */
         @font-face { font-family: 'PlusTwoFont'; src: url('Plustwo.ttf'); }
@@ -25,17 +30,30 @@
         }
 
         /* --- HEADER SECTION --- */
+        .plus-two-link {
+            text-decoration: none;
+            display: inline-block;
+            outline: none; 
+            -webkit-tap-highlight-color: transparent;
+            transition: transform 0.1s ease;
+        }
+
+        /* Click Animation for PLUS TWO Header */
+        .plus-two-link:active {
+            transform: scale(0.95);
+        }
+
         .plus-two {
             font-family: 'PlusTwoFont', sans-serif;
             color: #7E7E62;
             font-size: 1.5rem;
-            margin-bottom: 30px; /* Reduced gap */
+            margin-bottom: 30px;
         }
 
         h1 {
             font-family: 'SubjectFont', sans-serif;
             font-size: 3rem;
-            margin: 1;
+            margin: 10px 0;
             line-height: 1.1;
             color: #222;
         }
@@ -47,10 +65,39 @@
             color: #333;
         }
 
-        .emoji {
-            font-size: 1.3rem;
-            margin-bottom: 0;
-            display: block;
+        /* --- SOCIAL ICONS SECTION --- */
+        .social-container {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 10px 0;
+        }
+
+        .social-icon {
+            background-color: #7E7E62;
+            color: white;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: all 0.2s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        .social-icon:hover {
+            opacity: 0.9;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .social-icon:active {
+            transform: scale(0.92);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
         /* --- CENTERED DIVIDER --- */
@@ -73,7 +120,7 @@
 
         .chapter-label strong {
             font-family: 'ChapterNameFont', sans-serif;
-            font-weight: normal; /* Using the custom font's own weight */
+            font-weight: normal;
         }
 
         /* --- BUTTONS --- */
@@ -95,10 +142,16 @@
             width: fit-content;
             display: inline-block;
             text-align: center;
+            transition: transform 0.1s ease;
+            -webkit-tap-highlight-color: transparent;
         }
 
         .btn:hover {
             opacity: 0.9;
+        }
+
+        .btn:active {
+            transform: scale(0.96);
         }
 
         .footer {
@@ -111,9 +164,22 @@
 </head>
 <body>
 
-    <div class="plus-two">PLUS TWO</div>
+    <a href="http://www.instagram.com/unfav.mibssm" class="plus-two-link">
+        <div class="plus-two">PLUS TWO</div>
+    </a>
+    
     <h1>Chemistry</h1>
     <p class="tagline">Forget love, chemistry has better reactions.💔</p>
+
+    <hr class="wp-divider">
+
+    <div class="social-container">
+        <a href="http://www.instagram.com/unfav.mibssm" class="social-icon"><i class="fab fa-instagram"></i></a>
+        <a href="https://youtube.com/@unfav.mibssm" class="social-icon"><i class="fab fa-youtube"></i></a>
+        <a href="https://t.me/Mibu_Techy" class="social-icon"><i class="fab fa-telegram"></i></a>
+        <a href="https://www.snapchat.com/add/unfav.mibssm" class="social-icon"><i class="fab fa-snapchat"></i></a>
+        <a href="https://github.com/unfav-mibssm" class="social-icon"><i class="fab fa-github"></i></a>
+    </div>
 
     <hr class="wp-divider">
 
