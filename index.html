@@ -6,6 +6,9 @@
     <title>Plus Two Chemistry</title>
     
     <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="apple-touch-icon" href="favicon.png">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#7E7E62">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     
@@ -38,7 +41,6 @@
             transition: transform 0.1s ease;
         }
 
-        /* Click Animation for PLUS TWO Header */
         .plus-two-link:active {
             transform: scale(0.95);
         }
@@ -264,6 +266,16 @@
     <hr class="wp-divider">
 
     <p class="footer">That’s it.</p>
+
+    <script>
+        if ('service-worker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('./service-worker.js')
+                .then(reg => console.log('Service Worker registered'))
+                .catch(err => console.log('Service Worker failed', err));
+            });
+        }
+    </script>
 
 </body>
 </html>
